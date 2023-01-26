@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    background: none;
+}
+body{
+    background: rgb(107,107,255);
+    background: linear-gradient(0deg, rgba(107,107,255,0.5158438375350141) 2%, rgba(255,255,255,1) 100%);
+}
+main{
+    height: 100vh;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+section{
+    height: 100%;
+}
+.entrada{
+    width: 70%;
+}
+.salida{
+    width: 30%;
+    background-color: #dbdffc;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.salida img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.salida > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.salida div p.ocultar:nth-child(1){
+    font-size: 32px;
+    font-weight: 700;
+    color: #023d85;
+    line-height: 120%;
+    text-align: center;
+}
+.salida div p.ocultar:nth-child(2){
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #023d85;
+    text-align: center;
+}
+button{
+    width: 45%;
+    height: 67px;
+    border: 6px solid #1461be;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.salida div button{
+    color: #0e5ab8;
+    margin-top: 15px;
+}
+.entrada > img{
+    position: absolute;
+    margin-left: 15px;
+}
+.entrada > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    padding: 120px 0 36px 0;
+    justify-content: space-between;
+}
+.entrada >div textarea{
+    border: none;
+    outline: none;
+    height: 200px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    resize: none;
+}
+.entrada > div textarea::placeholder { color: #0A3871; }
+
+.btn-encriptar{
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+
+.entrada > div > div > p{
+    color: #495057;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+.entrada > div > div > p img{
+    margin-right: 9px;
+}
+.entrada > div > div > button{
+    margin: 0 1.5% 10px 1.5%;;
+}
+.boxResultado{
+    width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+}
+#resultado{
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+#btn-Copiar{
+    width: 120%;
+}
+.hide{
+    display: none;
+}
+footer{
+    background-color: #ffffff;
+    color: #343A40;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 30px;
+    box-shadow: 0px 45px 56px 15px rgb(0 0 0);
+    border-radius: 40px 40px 0px 0px;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+footer ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+footer ul li a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #343A40;
+}
+#logo-instagram{
+    width: 40px;
+}
+#logo-github{
+    width: 40px;
+}
+
+@media (max-width: 1000px) {
+    .salida img{
+        width: 140%;
+    }
+    .salida div p.ocultar:nth-child(1){
+        font-size: 22px;
+    }
+    .salida div p.ocultar:nth-child(2){
+        font-size: 15px;
+    }
+  }
+
+@media (max-width: 770px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+    main .entrada, .salida{
+        width: 100%;
+    }
+    section{
+        height: auto;
+    }
+    .entrada > div{
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+    .salida img{
+        display: none;
+    }
+    #btn-Copiar{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    main{
+        height: auto;
+        padding: 17px;
+        justify-content: start;
+    }
+    .entrada >div > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .entrada >div > div button{
+        width: 100%;
+    }
+    .salida{
+        margin-bottom: 30px;
+    }
+  }

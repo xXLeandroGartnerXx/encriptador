@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador ONE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="encriptador.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="entrada">
+            <img src="imagenes/Vector.png" alt="logo alura">
+            <div>
+                <textarea id="textoEntrada" placeholder="ingrese el texto aqui"></textarea>
+                <div>
+                    <p><img src="imagenes/advertencia.png" alt="anvertencia">Solo letras minusculas y sin acentos</p>
+                    <button id="btn-Encriptar" class="btn-encriptar">Encriptar</button>
+                    <button id="btn-Desencriptar" type="button" >Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="boxResultado">
+                <p id="resultado"></p>
+            </div>
+            <img class="ocultar" src="imagenes/Muñeco.png" alt="sin mensaje">
+            <div>
+                <p class="ocultar">Ningún Mensaje fue encontrado</p>
+                <p class="ocultar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button id="btn-Copiar" class="hide" type="button">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Leandro Miguel Gartner</li>
+            <li>Leandro.gartner5@gmail.com</li>
+            <li><img id="logo-instagram" src="imagenes/logo instagram.png" alt="instagram"><a href="https://www.instagram.com/leandro_miguel_gartner/"> @leandro_miguel_gartner</a></li>
+            <li><img id="logo-github" src="imagenes/logo github.png" alt="github"><a href="https://github.com/xXLeandroGartnerXx"> @xXLeandroGartnerXx</a><a href=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
