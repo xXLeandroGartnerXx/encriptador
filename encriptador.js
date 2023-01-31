@@ -55,12 +55,12 @@ window.addEventListener("load", ()=>{
     function actualizarPantalla(texto){
 
         if(texto == ""){
-            esconder.forEach(elemento =>{
+            ocultar.forEach(elemento =>{
                 elemento.classList.remove("hide");
             });
             btnCopiar.classList.add("hide");
         }else{
-            esconder.forEach(elemento =>{
+            ocultar.forEach(elemento =>{
                 elemento.classList.add("hide");
             });
             btnCopiar.classList.remove("hide");
@@ -72,7 +72,7 @@ window.addEventListener("load", ()=>{
     const btnEncriptar = document.querySelector("#btn-Encriptar");
     const btnDesencriptar = document.querySelector("#btn-Desencriptar");
     const btnCopiar = document.querySelector("#btn-Copiar");
-    const esconder = document.querySelectorAll(".esconder");
+    const ocultar = document.querySelectorAll(".ocultar");
     const resultado = document.querySelector("#resultado");
 
     btnEncriptar.addEventListener("click",()=>{
